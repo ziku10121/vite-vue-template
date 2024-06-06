@@ -1,0 +1,27 @@
+// color-functions
+// Tint a color: mix a color with white
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+// Colors
+@function to-rgb($value) {
+  @return red($value), green($value), blue($value);
+}
+
+// Merge multiple maps
+@function map-merge-multiple($maps...) {
+  $merged-maps: (
+  );
+
+@each $map in $maps {
+  $merged-maps: map-merge($merged-maps, $map);
+}
+
+@return $merged-maps;
+}
