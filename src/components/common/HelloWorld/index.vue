@@ -6,9 +6,20 @@ defineProps({
 })
 
 const count = ref(0)
+
+const toggleCollapse = () => {
+  console.log('toggle');
+}
 </script>
 
 <template>
+  <div data-v-c45b27d3="" class="v-collapse custom-hover">
+    <i data-v-69f03f1f="" class="el-icon v-icon cursor-pointer"
+      style="font-size: 18px; --color: var(--top-header-text-color); --69f03f1f-hoverColor: undefined;"
+      @click="toggleCollapse">
+      <img src="../../../assets/svgs/collapse.svg" class="logo" alt="Vite logo" />
+    </i>
+  </div>
   <h1>{{ msg }}</h1>
 
   <div class="card bg-gray-200">
@@ -21,9 +32,8 @@ const count = ref(0)
 
   <p class="text-cyan-400">
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
+    starter
   </p>
   <p>
     Install
@@ -34,8 +44,11 @@ const count = ref(0)
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/style.scss";
 .read-the-docs {
   color: #888;
+}
+
+i {
+  cursor: pointer;
 }
 </style>
