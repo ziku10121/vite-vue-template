@@ -4,8 +4,7 @@ import Sidebar from '@/components/common/Sidebar/index.vue';
 </script>
 
 <template>
-  <Sidebar />
-  <div style="width: calc( 100% - 200px);position:absolute;left:200px;">
+  <div>
     <div>
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
