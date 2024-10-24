@@ -66,7 +66,7 @@ npm run build
 ### 目錄結構
 
 - `components` 裡，資料夾與檔案名使用大駝峰命名（upper camel case）
-- `views` 裡，資料夾與檔案名使用小駝峰命名（lower camel case）
+- `views` 裡，資料夾與檔案名使用大駝峰命名（lower camel case）
 
 ### 變數
 
