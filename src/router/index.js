@@ -11,12 +11,12 @@ const defaultChildRoutes = () => [
     component: () => import("../views/Home/index.vue"),
     meta: { title: "Home Page" },
   },
-  {
-    path: "result",
-    name: "result",
-    component: () => import("../views/result/index.vue"),
-    meta: { title: "Result" },
-  },
+  // {
+  //   path: "result",
+  //   name: "result",
+  //   component: () => import("../views/result/index.vue"),
+  //   meta: { title: "Result" },
+  // },
 ];
 
 const errorChildRoutes = () => [
@@ -29,7 +29,7 @@ const errorChildRoutes = () => [
   {
     path: "404",
     name: "Page404",
-    component: () => import(".../views/Error/404.vue"),
+    component: () => import("../views/Error/404.vue"),
     meta: { title: "404" },
   },
 ];
@@ -57,7 +57,7 @@ const routes = [
   {
     path: "/:pathMatch(.*)*", // 捕獲所有未匹配的路由
     name: "error404",
-    component: () => import("../views/Error404.vue"),
+    component: () => import("../views/Error/404.vue"),
   },
 ];
 

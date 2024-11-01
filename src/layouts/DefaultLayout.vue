@@ -1,5 +1,8 @@
-<script setup></script>
+<script setup>
+import Sidebar from "@/layouts/components/Sidebar/index.vue";
+</script>
 <template>
+  <Sidebar></Sidebar>
   <!-- <main>
     <SideBar>
     <header></header>
