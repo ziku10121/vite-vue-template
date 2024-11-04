@@ -34,8 +34,8 @@ npm run build
 
 ## 目錄結構
 
-    ├── README.md                       项目介绍
-    ├── index.html                      入口页面
+    ├── README.md                       項目介绍
+    ├── index.html                      入口頁面
     ├── public/                         靜態資源目錄
     ├── src/                            原始碼目錄
     │   ├── assets/                     靜態資源(例如圖片、文字、icon)
